@@ -23,12 +23,18 @@ function mutetube() {
 	zap("chips");
 }
 
-if (url.includes("youtube.com")) {
+if (url.includes("wikipedia.org")) {
 	document.getElementById("title").innerHTML = "Minimalist Youtube<br> <br><div style='font-size:1em;font-weight: normal;'> Just search and only watch you actually need. <br>- No thumbnails <br>- No comments <br>- No recommendations<br><br> In case you want to see the video preview, hover over the thumbnail.</div>";
-	zapimg();
-	zap("contents");
-	zap("chips");
+	//zapimg();
+	//zap("contents");
+	//zap("chips");
 	setInterval(function () {
-		mutetube();
+		//mutetube();
 	}, 10000);
+
+	var a = document.getElementsByTagName('a');
+
+	for (var idx = 0; idx < a.length; ++idx) {
+		console.log(a[idx].href);
+	}
 }

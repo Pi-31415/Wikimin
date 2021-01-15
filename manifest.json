@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Youmin",
+	"name": "Wikimin",
 	"version": "1.0",
-	"description": "Minimalist Youtube - just search and watch you actually need. No thumbnails, no comments, no recommendations - focus is key.",
+	"description": "Minimalist Wikipedia.",
 	"content_scripts": 
 	[
 		{
