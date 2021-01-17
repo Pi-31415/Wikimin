@@ -2,7 +2,7 @@ var url = window.location.href;
 
 
 
-if (url.includes("wikipedia.org")) {
+if (url.includes("wikipedia.org") || url.includes("wikiwand.com")) {
 
 
 	var a = document.getElementsByTagName('a');
