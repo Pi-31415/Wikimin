@@ -12,6 +12,7 @@ if (url.includes("wikipedia.org") || url.includes("wikiwand.com")) {
 		a[idx].setAttribute("style", "color:#313131;");
 	}
 
+
 	a = document.getElementsByTagName('p');
 	
 	for (var idx = 0; idx < a.length; ++idx) {
