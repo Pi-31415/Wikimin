@@ -5,13 +5,23 @@ var url = window.location.href;
 if (url.includes("wikipedia.org") || url.includes("wikiwand.com")) {
 
 
-	var a = document.getElementsByTagName('a');
+	
 
+	var a;
+	//switch
+	if(url.includes("wikipedia.org")){
+		a = document.getElementsByTagName('a');
+	}
+	else{
+		a = document.getElementsByClassName("int-link");
+	}
+
+	
 	for (var idx = 0; idx < a.length; ++idx) {
 		//console.log(a[idx].href);
 		a[idx].setAttribute("style", "color:#313131;");
 	}
-
+	
 
 	a = document.getElementsByTagName('p');
 	
